@@ -8,9 +8,12 @@ public class StringTest {
         Scanner sc = new Scanner(System.in);
         String input = sc.nextLine();
 
-
+        if (StringUtils.isNumeric(input)){
+            System.out.println(input + " is a number");
+        } else {
+            System.out.println("is not a number");
+            System.out.println("Flipped: " + StringUtils.swapCase(input));
+            System.out.println("Reversed: " + StringUtils.reverse(input));
+        }
     }
 }
-//        CheckInt string = Joiner.on("...").skipNulls();
-//        String result = joiner.join("Harry", null, "Ron", "Hermione");
-//        System.out.println("result = " + result);
